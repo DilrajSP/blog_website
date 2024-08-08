@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 export const AppBar = () => {
     return <div className="fixed w-full z-50 shadow-sm backdrop-blur-md">
-        <div className="border-b flex justify-between sm:px-12 px-3 py-4">
-            <Link to={"/blogs"} className="text-3xl tracking-wide font-BioRhyme font-extrabold flex flex-col justify-center cursor-pointer" >
+        <div className="border-b flex justify-between sm:px-12 px-3 py-2">
+            <Link to={"/blogs"} className="text-2xl md:text-3xl tracking-wide font-BioRhyme font-extrabold flex flex-col justify-center cursor-pointer" >
                 Medium
             </Link>
             <div className="flex justify-center flex-row">
