@@ -11,7 +11,7 @@ export const Blogs = () => {
         return <div>
             <AppBar />
             <div className="flex justify-center">
-                <div>
+                <div className="mt-20">
                     <BlogsSkeleton />
                     <BlogsSkeleton />
                     <BlogsSkeleton />
