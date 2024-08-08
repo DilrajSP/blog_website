@@ -9,7 +9,7 @@ export const AppBar = () => {
             <div className="flex justify-center flex-row">
                 <div className="mt-1">
                     <Link to={"/publish"}>
-                        <button type="button" className="mr-5 text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-4 py-2 text-center me-2 mb-2">Create Blog</button>
+                        <button type="button" className="inline-block px-4 py-2 mr-3 font-semibold text-center text-white align-middle transition-all rounded-3xl cursor-pointer bg-green-600 text-sm ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-110 hover:rotate-2 hover:shadow-lg ">Create Blog</button>
                     </Link>
                 </div>
                 <div className="mt-0.5">
