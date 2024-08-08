@@ -44,11 +44,14 @@ blogRouter.post('/', async (c) => {
         datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate());
 
+    const currentDate = new Date().toISOString();
+
     const blog = await prisma.post.create({
         data: {
             title: body.title,
             content: body.content,
-            authorId: authorId
+            authorId: authorId,
+            publishedDate: currentDate
         }
     })
 
@@ -97,6 +100,7 @@ blogRouter.get('/bluk', async (c) => {
                 content: true,
                 title: true,
                 id: true,
+                publishedDate: true,
                 author: {
                     select: {
                         name: true
@@ -133,6 +137,7 @@ blogRouter.get('/:id', async (c) => {
                 id: true,
                 title: true,
                 content: true,
+                publishedDate: true,
                 author: {
                     select: {
                         name: true

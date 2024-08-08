@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { Link } from "react-router-dom";
 
 interface BlogCardProps {
@@ -12,7 +13,9 @@ export const BlogCard = ({
     authorName,
     title,
     content,
+    publishedDate
 }: BlogCardProps) => {
+    const formattedDate = format(new Date(publishedDate), 'MMMM d, yyyy');
     return <Link to={`/blog/${id}`} >
         <div className="p-5 border-b border-zinc-200 pb-7 w-screen max-w-screen-md cursor-pointer">
             <div className="flex">
@@ -26,7 +29,7 @@ export const BlogCard = ({
                     <Circle />
                 </div>
                 <div className="flex justify-center flex-col pl-1 text-zinc-500 text-sm font-medium ">
-                    Publishing Date: TBA
+                    {formattedDate}
                 </div>
             </div>
             <div className="text-2xl font-bold pt-2">
