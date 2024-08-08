@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "outfit": ['outfit', 'sans-serif']
+        "BioRhyme": ['BioRhyme', 'serif']
       }
     },
   },
