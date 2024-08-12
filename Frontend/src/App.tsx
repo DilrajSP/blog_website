@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
-import './App.css'
 import { Signin } from './pages/Signin'
 import { Signup } from './pages/Signup'
 import Blog from './pages/Blog'
